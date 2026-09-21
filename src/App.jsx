@@ -1,6 +1,9 @@
 
 import './App.css'
-import Navbar from './components/Navbar/Navbar'
+import Banner from './components/Banner'
+import Navbar from './components/Navbar'
+import StatusSection from './components/StatusSection'
+
 
 function App() {
   
@@ -8,6 +11,9 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
+    <Banner></Banner>
+    <StatusSection></StatusSection>
+    
     
     </>
   )

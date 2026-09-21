@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional, ATS-friendly resumes with ready-made templates.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Custom sections"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "AI Writing Assistant",
+    "description": "Write emails, articles, social posts and professional content faster.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited writing",
+      "Grammar correction",
+      "50+ writing templates",
+      "Tone adjustment"
+    ],
+    "icon": "PenLine"
+  },
+  {
+    "id": 3,
+    "name": "CodeMaster AI",
+    "description": "AI-powered coding assistant for developers and programming students.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Code generation",
+      "Bug detection",
+      "Code explanation",
+      "Multiple languages"
+    ],
+    "icon": "Code2"
+  },
+  {
+    "id": 4,
+    "name": "Design Studio",
+    "description": "Create beautiful graphics and social media designs without advanced skills.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "5000+ templates",
+      "Premium graphics",
+      "Background remover",
+      "Brand kit"
+    ],
+    "icon": "Palette"
+  },
+  {
+    "id": 5,
+    "name": "Cloud Storage Plus",
+    "description": "Securely store, sync and share your files across all your devices.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "1 TB storage",
+      "Automatic backup",
+      "File sharing",
+      "Cross-device sync"
+    ],
+    "icon": "Cloud"
+  },
+  {
+    "id": 6,
+    "name": "Video Editor Pro",
+    "description": "Edit professional-quality videos with powerful and easy-to-use tools.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "4K export",
+      "Advanced transitions",
+      "Audio editing",
+      "No watermark"
+    ],
+    "icon": "Video"
+  },
+  {
+    "id": 7,
+    "name": "Project Manager",
+    "description": "Plan projects, manage tasks and collaborate with your team efficiently.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited projects",
+      "Team collaboration",
+      "Task management",
+      "Progress tracking"
+    ],
+    "icon": "ClipboardList"
+  },
+  {
+    "id": 8,
+    "name": "Developer Toolkit",
+    "description": "A complete collection of productivity tools designed for developers.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "API testing tools",
+      "JSON formatter",
+      "Code snippets",
+      "Developer utilities"
+    ],
+    "icon": "Wrench"
+  }
+]
