@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import Products from './components/Products'
 import StatusSection from './components/StatusSection'
+import Steps from './components/Steps'
 
 
 const getProducts = async() => {
@@ -23,6 +24,7 @@ function App() {
     <Banner></Banner>
     <StatusSection></StatusSection>
     <Products productPromise={productPromise} ></Products>
+    <Steps></Steps>
     
     
     </>

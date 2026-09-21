@@ -4,7 +4,7 @@ const Products = ({ productPromise }) => {
     const products = use(productPromise)
     console.log(products);
     return (
-        <div className='w-full max-w-7xl mx-auto h-[1324px] bg-white pt-20'>
+        <div className='w-full max-w-7xl mx-auto h-auto bg-white pt-20'>
             <div className="flex flex-col items-center gap-4">
                 <h2 className='text-5xl font-bold'>Premium Digital Tools</h2>
                 <div className="">
@@ -23,9 +23,9 @@ const Products = ({ productPromise }) => {
                     Cart(0)
                 </button>
             </div>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
                 {products.map(product =>
-                    <div key={product.id} className="border">
+                    <div key={product.id} className="border p-4">
                         <div className="">
                             <h3 className='text-2xl'>{product.title} </h3>
                             <p>{product.description} </p>
@@ -37,7 +37,7 @@ const Products = ({ productPromise }) => {
 
                             </ul>
 
-                            <button className='btn btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>{product.buy_now.button_text} </button>
+                            <button className='btn btn-primary w-full rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>{product.buy_now.button_text} </button>
                         </div>
                     </div>)}
             </div>
