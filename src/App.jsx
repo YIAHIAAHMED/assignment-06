@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './components/Banner'
 import Navbar from './components/Navbar'
+import Pricing from './components/Pricing'
 import Products from './components/Products'
 import StatusSection from './components/StatusSection'
 import Steps from './components/Steps'
@@ -25,6 +26,7 @@ function App() {
     <StatusSection></StatusSection>
     <Products productPromise={productPromise} ></Products>
     <Steps></Steps>
+    <Pricing></Pricing>
     
     
     </>

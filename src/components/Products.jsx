@@ -25,7 +25,7 @@ const Products = ({ productPromise }) => {
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
                 {products.map(product =>
-                    <div key={product.id} className="border p-4">
+                    <div key={product.id} className="border border-gray-200/80 rounded-2xl p-4">
                         <div className="">
                             <h3 className='text-2xl'>{product.title} </h3>
                             <p>{product.description} </p>
