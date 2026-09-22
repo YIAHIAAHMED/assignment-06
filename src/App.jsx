@@ -1,11 +1,14 @@
 
 import './App.css'
 import Banner from './components/Banner'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'
 import Products from './components/Products'
 import StatusSection from './components/StatusSection'
 import Steps from './components/Steps'
+import ViewPricing from './components/ViewPricing'
+
 
 
 const getProducts = async() => {
@@ -27,6 +30,8 @@ function App() {
     <Products productPromise={productPromise} ></Products>
     <Steps></Steps>
     <Pricing></Pricing>
+    <ViewPricing></ViewPricing>
+    <Footer></Footer>
     
     
     </>

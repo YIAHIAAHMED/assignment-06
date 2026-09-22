@@ -23,7 +23,7 @@ const Products = ({ productPromise }) => {
                     Cart(0)
                 </button>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 pt-10">
                 {products.map(product =>
                     <div key={product.id} className="border border-gray-200/80 rounded-2xl p-4">
                         <div className="">
