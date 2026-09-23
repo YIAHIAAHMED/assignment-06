@@ -1,8 +1,6 @@
 
-import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
-import Cart from './components/Cart'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'
@@ -13,7 +11,7 @@ import ViewPricing from './components/ViewPricing'
 
 
 
-const getProducts = async() => {
+const getProducts = async () => {
   const res = await fetch('/product.json')
   return res.json()
 }
@@ -23,24 +21,24 @@ const productPromise = getProducts()
 
 function App() {
 
-  // products or cart e dekhanur jonne
-  const [activeTab, SetActiveTab] = useState('products')
-  // console.log(activeTab)
-  
+
+
+
 
   return (
     <>
-    <Navbar></Navbar>
-    <Banner></Banner>
-    <StatusSection></StatusSection>
-    <Products productPromise={productPromise} ></Products>
-    <Cart></Cart>
-    <Steps></Steps>
-    <Pricing></Pricing>
-    <ViewPricing></ViewPricing>
-    <Footer></Footer>
-    
-    
+      <Navbar></Navbar>
+      <Banner></Banner>
+      <StatusSection></StatusSection>
+      <Products productPromise={productPromise} ></Products>
+
+      <Steps></Steps>
+      <Pricing></Pricing>
+      <ViewPricing></ViewPricing>
+      <Footer></Footer>
+      
+
+
     </>
   )
 }
