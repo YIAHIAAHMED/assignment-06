@@ -1,5 +1,7 @@
 import React from 'react';
 import socialImg from '../assets/social-media.png';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { FaSquareInstagram, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
@@ -11,29 +13,33 @@ const Footer = () => {
                         <p>Premium digital tools for creators,<br></br> professionals, and businesses. Work smarter <br></br> with our suite of powerful tools.</p>
                     </nav>
                     <nav>
-                        <h6 className="footer-title">Product</h6>
+                        <h6 className="footer-title text-2xl">Product</h6>
                         <a className="link link-hover">Features</a>
                         <a className="link link-hover">Pricing</a>
                         <a className="link link-hover">Templats</a>
                         <a className="link link-hover">Integrations</a>
                     </nav>
                     <nav>
-                        <h6 className="footer-title">Company</h6>
+                        <h6 className="footer-title text-2xl">Company</h6>
                         <a className="link link-hover">About</a>
                         <a className="link link-hover">Blogs</a>
                         <a className="link link-hover">Career</a>
                         <a className="link link-hover">Press</a>
                     </nav>
                     <nav>
-                        <h6 className="footer-title">Resources</h6>
+                        <h6 className="footer-title text-2xl">Resources</h6>
                         <a className="link link-hover">Documentation</a>
                         <a className="link link-hover">Help Center</a>
                         <a className="link link-hover">Community</a>
                         <a className="link link-hover">Contact</a>
                     </nav>
                     <nav>
-                        <h6 className="footer-title">Social Links</h6>
-                        <img src={socialImg} alt='social media' ></img>
+                        <h6 className="footer-title text-2xl">Social Links</h6>
+                        <div className="flex justify-between gap-4 ">
+                            <button className='btn w-12 h-12 rounded-full'><FaSquareInstagram /></button>
+                           <button className='btn w-12 h-12 rounded-full'> <FaFacebookSquare /></button>
+                            <button className='btn w-12 h-12 rounded-full'><FaXTwitter /></button>
+                        </div>
                     </nav>
 
                 </footer>

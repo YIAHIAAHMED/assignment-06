@@ -1,8 +1,9 @@
 import React, { use } from 'react';
+import Product from './Product';
 
 const Products = ({ productPromise }) => {
     const products = use(productPromise)
-    console.log(products);
+    // console.log(products);
     return (
         <div className='w-full max-w-7xl mx-auto h-auto bg-white pt-20'>
             <div className="flex flex-col items-center gap-4">
@@ -15,31 +16,32 @@ const Products = ({ productPromise }) => {
 
             </div>
             <div className="flex items-center gap-4 h-12 justify-center pt-4">
-                <button className="btn btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
-                    Products
-                </button>
 
-                <button className="btn bg-white rounded-full px-4">
-                    Cart(0)
-                </button>
+
+                <div className="tabs">
+                    <input
+                        type="radio"
+                        name="my_tabs_1"
+                        className="tab rounded-full px-4
+                                checked:bg-gradient-to-r checked:from-[#4F39F6] checked:to-[#9514FA] checked:text-white"
+                        aria-label="Products"
+                        defaultChecked
+                    />
+
+                    <input
+                        type="radio"
+                        name="my_tabs_1"
+                        className="tab rounded-full px-4
+                                  checked:bg-gradient-to-r checked:from-[#4F39F6] checked:to-[#9514FA] checked:text-white"
+                        aria-label="Cart(0)"
+                    />
+                </div>
+
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 pt-10">
                 {products.map(product =>
-                    <div key={product.id} className="border border-gray-200/80 rounded-2xl p-4">
-                        <div className="">
-                            <h3 className='text-2xl'>{product.title} </h3>
-                            <p>{product.description} </p>
-                            <p>{product.price}/{product.billing_type} </p>
-                            <p>{product.badge} </p>
-                            <ul>{product.features.map((feature, index) => (
-                                <li key={index}>{feature} </li>
-                            ))}
-
-                            </ul>
-
-                            <button className='btn btn-primary w-full rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>{product.buy_now.button_text} </button>
-                        </div>
-                    </div>)}
+                    <Product key={product.id} product={product} ></Product>
+                )}
             </div>
         </div>
     );

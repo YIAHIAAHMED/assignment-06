@@ -1,6 +1,8 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
+import Cart from './components/Cart'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'
@@ -20,6 +22,10 @@ const getProducts = async() => {
 const productPromise = getProducts()
 
 function App() {
+
+  // products or cart e dekhanur jonne
+  const [activeTab, SetActiveTab] = useState('products')
+  // console.log(activeTab)
   
 
   return (
@@ -28,6 +34,7 @@ function App() {
     <Banner></Banner>
     <StatusSection></StatusSection>
     <Products productPromise={productPromise} ></Products>
+    <Cart></Cart>
     <Steps></Steps>
     <Pricing></Pricing>
     <ViewPricing></ViewPricing>
