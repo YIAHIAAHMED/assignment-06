@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import Product from './Product';
 import Cart from './Cart';
 
-const Products = ({ productPromise }) => {
+const Products = ({ productPromise, isCart, setIsCart }) => {
     const products = use(productPromise)
     // console.log(products);
 
@@ -10,8 +10,7 @@ const Products = ({ productPromise }) => {
     const [activeTab, setActiveTab] = useState('Products')
     //   console.log(activeTab)
 
-    const[isCart, setIsCart] = useState([])
-    // console.log(isCart)
+    
 
    
     
@@ -43,7 +42,7 @@ const Products = ({ productPromise }) => {
                         name="my_tabs_1"
                         className="tab rounded-full px-4
                                   checked:bg-gradient-to-r checked:from-[#4F39F6] checked:to-[#9514FA] checked:text-white"
-                        aria-label="Cart(0)"
+                        aria-label= { `Cart (${isCart.length})`}
                         onClick={() => setActiveTab('Cart')}
                     />
                 </div>

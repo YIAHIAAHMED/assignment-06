@@ -2,7 +2,7 @@ import React from 'react';
 import DigiTools from '../assets/DigiTools.png';
 import cartImg from '../assets/shopping-cart.png';
 
-const Navbar = () => {
+const Navbar = ({isCart}) => {
     return (
         <div className="w-full max-w-7xl mx-auto navbar bg-white h-[92px] shadow-sm px-4">
             {/* Start: Dropdown & Logo */}
@@ -43,7 +43,7 @@ const Navbar = () => {
             <div className="navbar-end flex items-center gap-4">
                 <button className='flex'>
                     <img src={cartImg}  alt="Cart" className="h-6 w-6 cursor-pointer" />
-                    (0)
+                    {`(${isCart.length})`}
                 </button>
                 <button className="btn btn-ghost">Login</button>
                 <button className="btn btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] ">Get Started</button>

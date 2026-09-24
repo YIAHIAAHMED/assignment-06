@@ -5,7 +5,7 @@ import bannerImg from '../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='w-full max-w-7xl mx-auto flex justify-between p-16 gap-4'>
+        <div className='w-full max-w-7xl mx-auto lg:flex md:flex sm:flex-row-1 justify-between p-16 gap-4'>
             {/* left side of Banner */}
             <div className="">
                 <div className="">

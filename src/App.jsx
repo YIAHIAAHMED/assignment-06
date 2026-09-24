@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
@@ -21,16 +22,19 @@ const productPromise = getProducts()
 
 function App() {
 
+  const[isCart, setIsCart] = useState([])
+    // console.log(isCart)
+
 
 
 
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar isCart={isCart} ></Navbar>
       <Banner></Banner>
       <StatusSection></StatusSection>
-      <Products productPromise={productPromise} ></Products>
+      <Products productPromise={productPromise} isCart={isCart} setIsCart={setIsCart} ></Products>
 
       <Steps></Steps>
       <Pricing></Pricing>
