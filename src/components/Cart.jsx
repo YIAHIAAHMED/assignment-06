@@ -1,16 +1,47 @@
 import React from 'react';
 
-const Cart = ({isCart}) => {
-    console.log(isCart)
+const Cart = ({ isCart, setIsCart }) => {
+    const totalPrice = isCart.reduce((sum, cart) => sum + cart.price, 0)
+
+    const handleCheckOut = () => {
+        setIsCart([])
+    }
+    const handleDelete = (cart) =>{
+        const filteredArray = isCart.filter(c=> c.id !== cart.id)
+        setIsCart(filteredArray)
+
+    }
     return (
         <div>
+            <h2 className='text-5xl font-bold'>Your Cart</h2>
             {
-                isCart.map(cart => 
-                    <div key={cart.id} className="">
-                        <h2>{cart.title}</h2>
-                    </div>
-                )
+                isCart.length === 0 ? <p>Your Cart is Empty</p> :
+                    <>
+                        {
+                            isCart.map(cart =>
+
+                                <div key={cart.id} className="mb-4 flex flex-row justify-between bg-gray-200 p-4">
+                                    <div className="">
+                                        <h2>{cart.title}</h2>
+                                        <p>${cart.price} </p>
+                                    </div>
+                                    <div onClick={()=> handleDelete(cart)} className="text-red-400">
+                                        Remove
+                                    </div>
+                                </div>
+
+
+
+                            )
+                        }
+                        <div className="flex justify-between">
+                            <h2>Total</h2>
+                            <p className='font-bold'> ${totalPrice} </p>
+                        </div>
+                        <button onClick={handleCheckOut} className='btn btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-full text-center'>Proceed to Checkout</button>
+                    </>
             }
+
         </div>
     );
 };

@@ -52,7 +52,7 @@ const Products = ({ productPromise }) => {
                 {products.map(product =>
                     <Product key={product.id} product={product} isCart={isCart} setIsCart={setIsCart} ></Product>
                 )}
-            </div>) : (<Cart isCart={isCart} ></Cart>)}
+            </div>) : (<Cart isCart={isCart} setIsCart={setIsCart} ></Cart>)}
             
             
         </div>
