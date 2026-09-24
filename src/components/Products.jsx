@@ -10,6 +10,9 @@ const Products = ({ productPromise }) => {
     const [activeTab, setActiveTab] = useState('Products')
     //   console.log(activeTab)
 
+    const[isCart, setIsCart] = useState([])
+    // console.log(isCart)
+
    
     
     return (
@@ -47,9 +50,9 @@ const Products = ({ productPromise }) => {
             </div>
             {activeTab === 'Products' ? (<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 pt-10">
                 {products.map(product =>
-                    <Product key={product.id} product={product} ></Product>
+                    <Product key={product.id} product={product} isCart={isCart} setIsCart={setIsCart} ></Product>
                 )}
-            </div>) : (<Cart></Cart>)}
+            </div>) : (<Cart isCart={isCart} ></Cart>)}
             
             
         </div>

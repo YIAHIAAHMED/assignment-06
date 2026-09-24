@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-const Product = ({product}) => {
+const Product = ({product, setIsCart, isCart}) => {
     const [isBuy, setIsBuy] = useState(false)
 
     const handleBuy = ()=> {
         setIsBuy(true)
+        setIsCart([...isCart, product])
     }
     return (
         <div key={product.id} className="border border-gray-200/80 rounded-2xl p-4">

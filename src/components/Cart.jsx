@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = ({isCart}) => {
+    console.log(isCart)
     return (
         <div>
-            Cart
+            {
+                isCart.map(cart => 
+                    <div key={cart.id} className="">
+                        <h2>{cart.title}</h2>
+                    </div>
+                )
+            }
         </div>
     );
 };

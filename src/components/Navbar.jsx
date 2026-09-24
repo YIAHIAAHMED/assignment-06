@@ -41,7 +41,10 @@ const Navbar = () => {
 
             {/* End: Cart & Buttons */}
             <div className="navbar-end flex items-center gap-4">
-                <img src={cartImg} alt="Cart" className="h-6 w-6 cursor-pointer" />
+                <button className='flex'>
+                    <img src={cartImg}  alt="Cart" className="h-6 w-6 cursor-pointer" />
+                    (0)
+                </button>
                 <button className="btn btn-ghost">Login</button>
                 <button className="btn btn-primary rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] ">Get Started</button>
             </div>
