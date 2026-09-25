@@ -4,7 +4,7 @@ import cartImg from '../assets/shopping-cart.png';
 
 const Navbar = ({isCart}) => {
     return (
-        <div className="w-full max-w-7xl mx-auto navbar bg-white h-[92px] shadow-sm px-4">
+        <div className="w-full lg:max-w-7xl mx-auto navbar bg-white lg:h-[92px] min-h-[64px] shadow-sm px-4 lg:px-4">
             {/* Start: Dropdown & Logo */}
             <div className="navbar-start">
                 <div className="dropdown">

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='max-w-7xl mx-auto h-auto bg-white py-[120px] px-6 lg:px-20'>
+        <div className='max-w-7xl mx-auto h-auto bg-white lg:py-[120px] px-6 lg:px-20'>
             <div className="flex flex-col items-center">
-                <h2 className='text-5xl'>Simple, Transparent Pricing</h2>
+                <h2 className='lg:text-5xl md:text-4xl text-3xl'>Simple, Transparent Pricing</h2>
                 <p className='text-base text-[#627382FF] pt-[16px] '>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 mt-10">

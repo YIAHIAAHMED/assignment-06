@@ -2,9 +2,9 @@ import React from 'react';
 
 const ViewPricing = () => {
     return (
-        <div className='max-w-7xl mx-auto h-[480px] bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-center py-[120px] px-[200px] '>
+        <div className='w-full max-w-7xl mx-auto h-auto lg:h-auto bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-center p-6 lg:p-8'>
             <div className="text-white">
-                <h2 className='text-4xl font-bold mb-4'>Ready to Transform Your Workflow?</h2>
+                <h2 className='lg:text-4xl md:text-3xl text-2xl font-bold mb-4'>Ready to Transform Your Workflow?</h2>
                 <div className="text-base mb-10">
                     <p >Join thousands of professionals who are already using Digitools to work smarter.</p>
                     <p>Start your free trial today.</p>

@@ -5,14 +5,14 @@ import rocketImg from '../assets/rocket.png'
 
 const Steps = () => {
     return (
-        <div className='w-full max-w-7xl mx-auto h-[754px] bg-[#f9fafcFF] py-[120px] px-[200px] flex flex-col gap-[40px] '>
+        <div className='w-full max-w-7xl mx-auto lg:h-[754px] md:h-auto bg-[#f9fafcFF] py-[120px] lg:px-[200px] flex flex-col gap-[40px] '>
             <div className="flex flex-col items-center">
-                <h2 className='text-5xl'>Get Started in 3 Steps</h2>
+                <h2 className='lg:text-5xl md:text-4xl text-3xl'>Get Started in 3 Steps</h2>
                 <p className='text-base text-[#627382FF] pt-[16px] '>Start using premium digital tools in minutes, not hours.</p>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                 {/* 01 */}
-                <div className="border border-gray-200/80 rounded-2xl  bg-white rounded-lg">
+                <div className="border border-gray-200/80  bg-white rounded-lg">
                     <div className="">
                         <div className="flex justify-end">
                             <button className='btn btn-primary w-12 h-12 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-right'>01 </button>
